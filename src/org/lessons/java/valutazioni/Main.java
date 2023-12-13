@@ -27,7 +27,9 @@ public class Main {
             System.out.println("do you want to remove a student to the Course? y/n");
             String removeFromList = scanner.nextLine();
             if (removeFromList.equals("y") || removeFromList.equals("yes")){
-
+                System.out.println("choose the student you want to remove by their number in the list");
+                int numeroScelto = scanner.nextInt();
+                listaStudenti.remove(listaStudenti.get(numeroScelto));
             }else if (removeFromList.equals("n") || removeFromList.equals("no")) {
                 removeStudent = true;
             }else{
